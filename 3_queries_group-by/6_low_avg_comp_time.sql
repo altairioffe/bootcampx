@@ -7,3 +7,8 @@ GROUP BY students.name
 HAVING AVG(assignment_submissions.duration) < AVG(assignments.duration)
 ORDER BY avg_time;
 
+ALTER TABLE users ADD COLUMN 
+  name VARCHAR(255),
+  birth_year SMALLINT,
+  member_since TIMESTAMP
+;
